@@ -16,7 +16,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/email/generate`, { emailContent, tone });
+      const response = await axios.post(`https://springboot-backend-sb2z.onrender.com/api/email/generate`, { emailContent, tone });
       setGeneratedReply(typeof response.data === 'string' ? response.data : JSON.stringify(response.data));
     } catch (error) {
       setError(error.response?.data?.message || 'Failed to generate email reply. Please try again.');
