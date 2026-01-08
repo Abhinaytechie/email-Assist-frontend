@@ -25,7 +25,7 @@ import {
 } from '@mui/material';
 import './App.css';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const API_BASEAPI_URL_URL = "https://smart-ai-email-assistant-1.onrender.com";
 
 // Create a professional theme
 const theme = createTheme({
@@ -89,7 +89,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/email/generate`, {
+      const response = await axios.post(`${API_URL}/api/email/generate`, {
         emailContent,
         tone,
         replyHints
