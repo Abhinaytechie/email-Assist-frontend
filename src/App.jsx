@@ -25,7 +25,7 @@ import {
 } from '@mui/material';
 import './App.css';
 
-const API_BASEAPI_URL_URL = "https://smart-ai-email-assistant-1.onrender.com";
+const API_URL = "https://smart-ai-email-assistant-1.onrender.com";
 
 // Create a professional theme
 const theme = createTheme({
